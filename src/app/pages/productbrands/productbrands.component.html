@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<h2 class="text-primary" style="text-align: center">Welcome to Product Brand Page of this Application!</h2>
+<br>
+<div *ngFor="let r of carData"> <!-- using a Directive ngFor and fetchinhg the data from cardata -->
+    <ul>
+      <li>
+      Product Id :
+      Product Category :
+      Main Category :
+      Tariff Code :
+      Suppiler Name :
+      {{r.ProductId}}
+      {{r.Category}}
+      {{r.MainCategory}}
+      {{r.TaxTarifCode}}
+      {{r.SupplierName}}
+      </li>
+     </ul>
+</div>
